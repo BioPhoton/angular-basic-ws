@@ -1,13 +1,13 @@
 # Add a BookNew Form and Route
 1. Create a new Component with ng-cli, and a route
-2. Add a link from `BookList` with `routerLink` to `BookNew`
-3. Use __Model-Driven__ form syntax → add `ReactiveFormsModule` to `BooksModule`
+2. Add a link from `BookComponent` with `routerLink` to `BookNew`
+3. Add `ReactiveFormsModule` to `BooksModule`
 4. Extend the `Routes` (Pay attention to the order of the routes!)
 
 ## Hints
 
 ```sh
-ng g c books/book-new
+ng generate component books/book-new
 ```
 
 ```typescript
@@ -32,4 +32,4 @@ this.form = this.fb.group({
 ```
 
 
-[Solution](https://stackblitz.com/github/angularjs-de/angular-workshop/tree/Add-a-BookNew-Route)
+[Solution](https://stackblitz.com/github/workshops-de/angular-workshop/tree/solve--add-a-BookNew-form-and-route)
