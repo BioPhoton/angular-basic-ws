@@ -36,7 +36,7 @@ ng g c about/about
 ```
 #### app.component.html
 ```
-<app-book-card></app-book-card>
+<app-book></app-book>
 ```
 #### books.module.ts
 ```
