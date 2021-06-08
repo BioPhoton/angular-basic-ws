@@ -67,7 +67,7 @@ To display the sidenav Component you will need to set a width of the `mat-side` 
       <a mat-list-item routerLink='/about'>About</a>
     </mat-nav-list></mat-sidenav>
   <mat-sidenav-content>
-      <app-card-book></app-card-book>
+      <app-book></app-book>
   </mat-sidenav-content>
 </mat-sidenav-container>
 
