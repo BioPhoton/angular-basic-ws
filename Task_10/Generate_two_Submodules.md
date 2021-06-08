@@ -49,4 +49,4 @@ export class BooksModule { }
 ```
 
 
-[Solution](https://stackblitz.com/github/workshops-de/angular-workshop/tree/solve--filter-books)
+[Solution](https://stackblitz.com/github/workshops-de/angular-workshop/tree/solve--create-a-BookModule)
