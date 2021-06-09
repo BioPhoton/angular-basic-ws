@@ -16,8 +16,8 @@
 
 ```javascript
 	addAuthor() {
-  ...
-  	this.authors.push(authorForm);
+        const authorControl = new FormControl('', [ Validators.required ])
+        this.authors.push(authorControl);
   }
   
   	deleteAuthor(index: number) {
@@ -29,8 +29,8 @@
 ```html
   <ng-container formArrayName='authors'>
     <ng-container *ngFor='let authorForm of authors.controls; let i = index'>
-        <mat-form-field [formGroup]='authorForm'>
-        ...
+        <mat-form-field>
+               <input matInput [formControlName]="i" placeholder='Author' />
         </mat-form-field>
         <mat-icon class='delete-btn' (click)='deleteAuthor(i)'>
           delete_forever
