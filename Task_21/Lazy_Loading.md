@@ -43,7 +43,7 @@ const routes: Routes = [
     component: BookComponent
   },
   {
-    path: 'details/:isbn',
+    path: ':isbn',
     component: BookDetailComponent
   }
 ];
