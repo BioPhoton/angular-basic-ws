@@ -1,7 +1,7 @@
 # Change Header title on BookComponent click
 
 1. Refactor Expose your Subject as an Observable to your HeaderComponent
-2. Implement a `(click)`-Handler inside your `BookComponent`, which calls the `setHeader`-function of the `HeaderService`
+2. Implement a `(click)`-Handler inside your `BookCardComponent`, which calls the `setHeader`-function of the `HeaderService`
 3. Change the `setHeader`-function accordingly (the subject should emit now the incoming Headertitle and not a static string anymore)
 4. Don't forget to use the async pipe inside the `HeaderComponent` to subscribe to the `headerTitle$`-Observable
 
