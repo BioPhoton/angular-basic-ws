@@ -6,7 +6,7 @@
 - Configure the start route, redirecting to `/books`.
 - Configure a book route, displaying the `BookComponent` (path: _books_).
 - Switch to _AppModule_.
-- Add the `AppRoutingModule` to the `imports`-Colleciton.
+- Add the `AppRoutingModule` to the `imports`- Collection.
 - Switch to _app.component.html_.
 - Replace its content with `router-outlet`.
 - Use the directive `routerLink` for the 2 links to navigate between the views.
