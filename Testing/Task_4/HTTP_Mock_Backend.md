@@ -6,6 +6,20 @@
     3. Assert `getAll()` provides the error _Sorry, we could not load any books_ if the API responds with error code 500.
 - Note, that you need to add error handling to `BookApiService.getAll()` in order to make the tests for the error cases pass.
 
+```ts
+  getAll(): Observable<Book[]> {
+    return this.http
+      .get<Book[]>(`${this.endpoint}`)
+      .pipe(
+        catchError((err: HttpErrorResponse) =>
+          err.status === 500
+            ? throwError(new Error('Sorry, we could not load any books'))
+            : throwError(new Error('Sorry, we have connectivity issues.'))
+        )
+      );
+  }
+ ```
+
 ## Hints
 
 ```ts
