@@ -38,7 +38,7 @@ openDialog() {
 
 ```html
 <div mat-dialog-actions>
-  <button mat-button type="submit">Send</button>
+  <button mat-button (click)="send()">Send</button>
   <button mat-button mat-dialog-close>Cancel</button>
 </div>
 ```
