@@ -24,7 +24,3 @@ Open project in browser
 
 - Open your browser with the address http://localhost:4200/
 - open in IDE (exclude dist and tmp in Webstorm)
-
-### Change the default prefix
-- Open the file `angular.json`
-- Change `projects.<PROJECT_NAME>.prefix` from "app" to your own personal prefix
