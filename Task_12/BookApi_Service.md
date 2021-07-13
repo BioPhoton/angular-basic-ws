@@ -18,7 +18,7 @@ ng generate service book/book-api
 **Code:**
 
 ```typescript
-// book-list.component.ts
+// book.component.ts
 constructor(private bookApi: BookApiService){}
 ```
 
