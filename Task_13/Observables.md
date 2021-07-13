@@ -11,7 +11,7 @@
 import { Observable, of } from 'rxjs';
 ```
 
-**getBooks()**
+**getAll()**
 ```typescript
 return of(this.books);
 ```
