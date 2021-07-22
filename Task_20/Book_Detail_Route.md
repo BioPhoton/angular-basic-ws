@@ -12,10 +12,8 @@ It is time to spend a Details-View to our book application.
     - publisher: { name: string, url: string };
 - Create a new Component `BookDetail` with the Angular CLI: `ng generate component book/book-detail`.
 - Open _AppRoutingModule_.
-- Add the route for the details view: _book/details/:isbn_.
-- Open _BookComponent_.
-- Inject the `Router`-Service in the Constructor.
-- Use the router in the method `goToBookDetails`, to navigate the details view.
+- Add the route for the details view: _books/:isbn_.
+- Use the routerLink Direktive in the BookCard HTML Template, to navigate the details view.
 - Open _BookApiService_.
 - Extend the _BookApiService_ allowing to load a book with its ISBN (`getBookByIsbn(isbn: string)`).
 - Open _BookDetailComponent_.
@@ -42,16 +40,17 @@ ngOnInit () {
 }
 ```
 
-**Extend BookList HTML with routerlink**
+**Extend BookCard HTML with routerlink**
 
-```ts
-// book.component.ts
+```html
+// book-card.component.html
 
-constructor(private router: Router, private bookApi: BookApiService) {}
-
-goToBookDetails(book: Book) {
-  this.router.navigate(['book', 'details', book.isbn]);
-}
+<h3>{{ content.title }}</h3>
+<h4>{{ content.author }}</h4>
+<a [routerLink]="['/books', content.isbn ]">Details</a>
+<p>
+    {{ content.abstract }}
+</p>
 ```
 
 
@@ -60,7 +59,7 @@ goToBookDetails(book: Book) {
 ```ts
 // app-routing.module.ts
 
-{ path: 'book/details/:isbn', component: BookDetailComponent }
+{ path: 'book/:isbn', component: BookDetailComponent }
 ```
 
 **Extend and use the Service with a getBookByIsbn(isbn: string)**
