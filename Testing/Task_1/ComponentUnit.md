@@ -6,7 +6,7 @@
 ## Hints
 
 ```ts
-describe('<ws-book-card>', () => {
+describe('<app-book-card>', () => {
   describe('When no content is passed', () => {
     it('defaults to "n/a"', () => {
        // Write your test here, please
