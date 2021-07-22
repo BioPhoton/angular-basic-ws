@@ -1,8 +1,10 @@
 # Component Mock Dependency
-- Create _book.component.spec.ts_ next to book-list.component.ts, if the file not exists.
+- Create _book.component.spec.ts_ next to book.component.ts, if the file not exists.
+- Create a Mock for the `BookCardComponent`
 - Create a mock for `BookApiService` with Jasmine.
+- Don't forget to declare the `FitlerBooksPipe` inside the declaration Array
 - Configure the mock returning one Book when method `getAll` ist called.
-- Assert that one book is rendered in the template.
+- Assert that one book will be emitted from the mocked service to the component
 
 ## Hints
 
