@@ -2,7 +2,7 @@
 - Create a guard service: `ng generate guard confirm-leave`.
 - Use `window.confirm` to ask the user if he really want to leave the page.
 - Open _BookRoutingModule_
-- Add the guard to the route `:isbn`
+- Add the guard to the route `:isbn` (For the `BookDetailComponent` )
 
 ## Hints
 
